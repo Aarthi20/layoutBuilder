@@ -1,0 +1,148 @@
+/* Write your CSS here */
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+@media screen and (min-width: 768px) {
+  .body-container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 448px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+}
+
+.left-navbar-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  color: #475569;
+  background-color: #cbd5e1;
+  height: 35%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+@media screen and (min-width: 768px) {
+  .left-navbar-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 40%;
+    max-width: 250px;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 20px;
+  }
+}
+
+.body-heading {
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #475569;
+}
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-items {
+    flex-direction: column;
+  }
+}
+
+.item {
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin: 10px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #f1f5f9;
+  height: 100%;
+  padding: 30px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.content-text {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .content-text {
+    text-align: left;
+    font-size: 15px;
+    margin: 0px;
+  }
+}
+.right-navbar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  background-color: #e2e8f0;
+  height: 30%;
+  padding: 32px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+@media screen and (min-width: 768px) {
+  .right-navbar-container {
+    justify-content: flex-start;
+    height: 100%;
+    width: 30%;
+    max-width: 250px;
+    padding: 32px;
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .box-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 20px;
+  height: 150px;
+  width: 180px;
+  border: 1px solid #64748b;
+  margin: 5px;
+}
+@media screen and (min-width: 768px) {
+  .box {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+}
